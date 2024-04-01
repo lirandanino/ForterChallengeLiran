@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    background-image: url('assets/g.jpg'); /* Specify the path to your image */
+    background-size: 100% 100%; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; 
+  min-height:100%;
+  background-attachment: fixed;
+
+  }
+  
+ 

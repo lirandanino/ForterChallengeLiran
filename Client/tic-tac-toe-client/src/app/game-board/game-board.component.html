@@ -1,0 +1,17 @@
+ 
+
+<button (click)="newGame()">New Game</button>
+<div>
+@if(gameOverMessage){<p class="game-over-message" >{{ gameOverMessage }}</p>}
+</div>
+<table>
+    @for (  row of board;   track row; let indexrow = $index) {
+      <tr>
+        @for ( cell of row;  track cell; let indexcell = $index) {
+          <td (click)="makeMove(indexrow, indexcell)">
+            {{ cell }}
+          </td>
+        }
+      </tr>
+    }
+  </table>
